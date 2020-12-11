@@ -20,7 +20,8 @@ count = 0
 
 for x in f:
     input_list.append(x)
-    pattern_size = len(x)
+
+pattern_size = len(input_list[0])
 
 # print(input_list[0][2])
 firstslope = findTrees(input_list, 1, 1, pattern_size)
@@ -28,6 +29,7 @@ secondslope = findTrees(input_list, 3, 1, pattern_size)
 thirdslope = findTrees(input_list, 5, 1, pattern_size)
 fourthslope = findTrees(input_list, 7, 1, pattern_size)
 fifthslope = findTrees(input_list, 1, 2, pattern_size)
+
 print(firstslope, secondslope, thirdslope, fourthslope, fifthslope)
 print(firstslope*secondslope*thirdslope*fourthslope*fifthslope)
 

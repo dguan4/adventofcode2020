@@ -19,7 +19,7 @@ def getBagContains(dict, dict_count, bag_color):
         return (current_bags, count)
     return (current_bags, count)
 
-f = open('sample.txt')
+f = open('input.txt')
 looking_for = "shiny gold"
 
 dict = {}
